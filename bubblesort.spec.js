@@ -12,7 +12,7 @@ it('should handle single item arrays', function(){
       expect(bubbleSort([1, 3, 4, 2])).toEqual([1,2,3,4]);
   });
 
-spyOn(window, "swap");
-  swap.calls.count()
+// spyOn(window, "swap");
+//   swap.calls.count()
 });
 
