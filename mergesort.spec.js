@@ -8,6 +8,6 @@ describe('Split Array function', function() {
 describe('Merge Sort', function(){
   it('is able to merge two sorted arrays into one sorted array', function(){
     // test the merging algorithm
-    expect(split([5, 2, 6, 8])).toEqual([2, 5, 6, 8]);
+    expect(mergeSort([5, 2, 6, 8])).toEqual([2, 5, 6, 8]);
   });
 });

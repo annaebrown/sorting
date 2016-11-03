@@ -16,7 +16,7 @@ var bubbleSort = function(array) {
   }
 
   for (var i = 0; i < array.length; i++) {
-      debugger;
+      // debugger;
     for (var j = i + 1; j < array.length; j++) {
       if (compare(array[i], array[j])) {
         swap(i, j, array)
