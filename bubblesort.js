@@ -1,16 +1,25 @@
+function compare(x, y) {
+    return x > y;
+}
+
+ function swap(i, j, arr) {
+  var greater = arr[i];
+  var lesser = arr[j];
+  arr[i] = lesser;
+  arr[j] = greater;
+  return arr;
+}
+
 var bubbleSort = function(array) {
-  var greater;
-  var less;
   if (array.length <= 1) {
     return array;
   }
+
   for (var i = 0; i < array.length; i++) {
+      debugger;
     for (var j = i + 1; j < array.length; j++) {
-      if (array[i] > array[j]) {
-        lesser = array[j];
-        greater = array[i];
-        array[i] = lesser;
-        array[j] = greater;
+      if (compare(array[i], array[j])) {
+        swap(i, j, array)
       }
     }
   }
